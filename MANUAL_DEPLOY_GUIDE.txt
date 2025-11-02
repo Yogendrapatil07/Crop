@@ -1,0 +1,61 @@
+================================================================================
+SMART CROP TECHNOLOGIES - MANUAL NETLIFY DEPLOYMENT GUIDE
+================================================================================
+
+OPTION 1: Drag & Drop (Fastest - 2 minutes)
+----------------------------------------
+1. Open your web browser
+2. Go to: https://app.netlify.com/drop
+3. Sign in (or create free account)
+4. Open File Explorer
+5. Navigate to: C:\Users\sumit\Downloads\crop\smart-crop-tech\.next
+6. Drag the .next folder to the browser window
+7. Wait 30 seconds - Your site is LIVE!
+
+OPTION 2: Netlify CLI Upload (if drag-drop doesn't work)
+----------------------------------------
+Open PowerShell in your project folder and run:
+
+1. netlify login
+   (Browser will open - click "Authorize")
+
+2. netlify deploy --prod
+   (Answer the questions:)
+   - Create new site? YES
+   - Team: Choose your team
+   - Site name: smart-crop-tech
+   - Publish directory: .next
+
+3. Done! Your site is LIVE!
+
+OPTION 3: Manual Upload via Netlify Dashboard
+----------------------------------------
+1. Go to: https://app.netlify.com
+2. Click "Sites" → "Add new site" → "Deploy manually"
+3. Drag the .next folder to upload
+4. Wait - Your site is LIVE!
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: "Drag and drop not working"
+Solution: Use OPTION 2 (CLI) instead
+
+Problem: "Build folder too large"
+Solution: The .next folder should work fine. If not, contact me.
+
+Problem: "Site shows errors after deploy"
+Solution: Next.js apps need special configuration on Netlify.
+          We need to use Netlify CLI or GitHub for proper deployment.
+
+================================================================================
+NEED HELP? 
+================================================================================
+Tell me:
+1. Which option are you trying?
+2. What exact error message do you see?
+3. Screenshot if possible
+
+I'll help you fix it immediately!
+================================================================================
